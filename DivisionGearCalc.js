@@ -104,6 +104,10 @@ function getValue() {
 }
 
 function loadSavedGear(){
+	for (var i = 0, len = localStorage.length; i < len; ++i ) {
+  console.log( localStorage.getItem( localStorage.key( i ) ) );
+}
+	
 	if(localStorage.length > 0){
 		for(var i = 0; localStorage.length > 0; i++){
 			if(localStorage.getItem(i) !== "undefined"){
