@@ -105,13 +105,13 @@ function getValue() {
 
 function loadSavedGear(){
 	for (var i = 0, len = localStorage.length; i < len; ++i ) {
-  console.log( localStorage.getItem( localStorage.key( i ) ) );
+  alert( localStorage.getItem( localStorage.key( i ) ) );
 }
 	
 	if(localStorage.length > 0){
 		for(var i = 0; localStorage.length > 0; i++){
 			if(localStorage.getItem(i) !== "undefined"){
-				alert(localStorage.getItem(i));
+			//	alert(localStorage.getItem(i));
 				var json_string = localStorage.getItem(i);
 				var obj = JSON.parse(json_string);
 			
