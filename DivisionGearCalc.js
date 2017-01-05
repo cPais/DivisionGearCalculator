@@ -105,7 +105,7 @@ function getValue() {
 
 function loadSavedGear(){
 	for (var key in localStorage){
-   alert(key)
+   alert(/*key*/"Wow")
 }
 	
 	if(localStorage.length > 0){
