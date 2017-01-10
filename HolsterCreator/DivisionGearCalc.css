@@ -1,0 +1,48 @@
+.largeInput{
+	width:300px;
+	height:30px;
+}
+
+.statInput{
+	width:75px;
+	height:75px;
+}
+
+.talentInput{
+	width:300px;
+	height:42px;
+}
+
+.yellow{
+	color:#eabd07;
+}
+
+/*Top Menu Style*/
+#nav {
+    text-align: center;
+   /* min-width: 500px; */
+	background-color: #333;
+	
+}
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#nav li {
+    display: inline-block;
+	position:relative;
+	top:9px;
+	right:20px;
+}
+#nav li a{
+	color: white;
+	text-decoration: none;
+    padding: 9px 16px;
+
+}
+#nav li a:hover{
+background-color: #111;
+}	
+
+/*Top Menu Style ends here*/
