@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- S. Miller -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" type="text/css" href="DivisionGearCalc.css"> 
+	</head>
+	
+	
+	
+	<body>
+		<div id="Root">
+		
+		<ul id="nav">
+				<li><a href="../CalculationHub/DivisionGearCalc.html">Gearset Creator</a></li>
+			</ul>
+			
+			<form>
+				<fieldset>
+					<legend>Mask Creator:</legend>
+					
+					<input type="text" id="nameInput" name="Name"  class="largeInput" placeholder="Name...">
+				<br>
+					<input type="text" id="armorInput" readonly name="Armor" class="largeInput" placeholder="Armor...">
+				<br>
+				
+					
+					<input type="text" id="firearmsInput"    readonly    class="statInput" 	  placeholder="Firearms..." >
+					<input type="text" id="staminaInput"     readonly 	 class="statInput"    placeholder="Stamina...">
+					<input type="text" id="electronicsInput" readonly    class="statInput" 	  placeholder="Electronics..." >
+				<br>
+					
+					<select id="talentInput" name="Gear Talent"  class="talentInput" placeholder="Talent...">
+						<option class="yellow" value="Enduring">Enduring</option>
+						<option class="yellow" value="Refreshed">Refreshed</option>
+						<option class="yellow" value="Rehabilitated">Rehabilitated</option>
+						<option class="yellow" value="Rejuvenated">Rejuvenated</option>
+						<option class="yellow" value="Tenacious">Tenacious</option>
+						<option class="yellow" value="Ferro's Oxygen Mask">Ferro's Oxygen Mask</option>
+							
+					
+						<option value="Sentry">Sentry</option>
+						<option value="Striker">Striker</option>
+						<option value="Tactician">Tactician</option>
+						<option value="Nomad">Nomad</option>
+						<option value="Predator">Predator</option>
+					
+						<option value="Hunters Faith">Hunters Faith</option>
+						<option value="Final Measure">Final Measure</option>
+						<option value="Lone Star">Lone Star</option>
+						<option value="Alphabridge">Alphabridge</option>
+						<option value="Banshee">Banshee</option>
+					
+						<option value="Deadeye">Deadeye</option>
+						<option value="Firecrest">Firecrest</option>
+						<option value="Reclaimer">Reclaimer</option>
+						<option value="D3-FNC">D3-FNC</option>
+					</select>
+				<br>
+				
+				
+					<select id="majorAttribute_propertyInput"  name="majorAttributeI"   class="largeInput" placeholder="MajorAttributeOne:Property...">
+						<option value="Damage vs Elites">Damage vs Elites</option>
+						<option value="Crit Chance">Crit Chance</option>
+						<option value="Health">Health</option>
+						<option value="HP on Kill">HP on Kill</option>
+						<option value="Exotic Damage Resilience">Exotic Damage Resilience</option>
+						<option value="Skill Power">Skill Power</option>
+					</select>
+					
+					<select id="majorAttribute_valueInput"     name="majorAttributeII"  class="largeInput" placeholder="MajorAttributeOne:Value...">
+					</select>
+				<br>
+				
+					<select id="minorAttribute_propertyInput"     class="largeInput" placeholder="MinorAttribute:Property...">
+						<option value="Kill XP">Kill XP</option>
+						<option value="Enemy Armor Damage">Enemy Armor Damage</option>
+						
+						<option value="Burn Resistance">Burn Resistance</option>
+						<option value="Disorient Resistance">Disorient Resistance</option>
+						<option value="Blind/Deaf Resistance">Blind/Deaf Resistance</option>
+					</select>
+					
+					<select id="minorAttribute_valueInput"       class="largeInput" placeholder="MinorAttribute:Value...">
+					</select>
+				<br>
+				
+					
+				<button type="button" id="submitChest">Create mask</button>
+				
+				
+				</fieldset>
+			</form>
+				<br>
+			Saved Mask Pieces
+				<br>
+			<select id="savedGear">
+				
+			</select>
+			<button type="button" id="loadChest">Load mask piece</button>
+			<button type="button" id="deleteChest">Delete mask piece</button>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="DivisionGearCalc.js" type="text/javascript"></script>
+	</body>
+</html>
