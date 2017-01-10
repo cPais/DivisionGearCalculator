@@ -184,9 +184,7 @@ function loadSavedGear(field,type){
 				}
 			}
 		}
-		else{
-			alert("You have no saved gear.");
-		}
+		
 }
 
 
