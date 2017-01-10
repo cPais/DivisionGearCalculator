@@ -1,0 +1,88 @@
+.largeInput{
+	width:300px;
+	height:30px;
+}
+
+.statInput{
+	width:150px;
+	height:50px;
+	
+}
+
+.talentInput{
+	width:300px;
+	height:42px;
+}
+
+.yellow{
+	color:#eabd07;
+}
+.title{
+	background-color:#656466;
+	color:white;
+}
+
+.majorOff{
+	background-color:#eaed44;
+	
+}
+.majorDef{
+	background-color:#a2e2ef;
+	
+}
+.majorUtil{
+	background-color:#6ffc73;
+	
+}
+.minor{
+	background-color:#e194f7;
+	
+}
+
+
+
+th{
+	
+	font-style:italic;
+}
+
+#AttributeDisplayRow{
+	
+	position:relative;
+	left:10%;
+	
+}
+#nameDiv{
+	position:relative;
+	left:18%;
+}
+
+/*Top Menu Style*/
+#nav {
+    text-align: justify;
+   /* min-width: 500px; */
+	background-color: #333;
+	
+}
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#nav li {
+    display: inline-block;
+	position:relative;
+	top:9px;
+	right:20px;
+}
+#nav li a{
+	color: white;
+	text-decoration: none;
+    padding: 9px 16px;
+
+}
+#nav li a:hover{
+background-color: #111;
+}	
+
+/*Top Menu Style ends here*/

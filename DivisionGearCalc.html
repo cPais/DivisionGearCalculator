@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- S. Miller -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" type="text/css" href="DivisionGearCalc.css"> 
+		<title>Tom Clancy's The Division Gear Calculator</title>
+	</head>
+	
+	
+	
+	<body>
+		<div id="Root">
+			<ul id="nav">
+				<li><a href="../ChestCreator/DivisionGearCalc.html">Body Creator</a></li>
+				<li><a href="../HeadCreator/DivisionGearCalc.html">Head Creator</a></li>
+				<li><a href="../LegCreator/DivisionGearCalc.html">Legs Creator</a></li>
+				<li><a href="../BackCreator/DivisionGearCalc.html">Backpack Creator</a></li>
+				<li><a href="../HandCreator/DivisionGearCalc.html">Gloves Creator</a></li>
+				<li><a href="../HolsterCreator/DivisionGearCalc.html">Holster Creator</a></li>
+			</ul>
+			
+
+			
+			<form>
+				<fieldset>
+					<legend>Gearset Creator:</legend>
+					<div id="nameDiv">
+					<input type="text" id="nameInput" name="Name"  class="largeInput" placeholder="Name...">
+				<br>
+					</div>
+				
+					<div id="AttributeDisplayRow">
+						<input  id="firearmsInput"    value=0    readonly    class="statInput" 	  placeholder="Firearms..." >
+						<input  id="staminaInput"     value=0    readonly    class="statInput"    placeholder="Stamina...">
+						<input  id="electronicsInput" value=0    readonly    class="statInput" 	  placeholder="Electronics..." >
+						<input  id="armorInput"       value=0    readonly    class="statInput" 	  placeholder="Armor..." >
+					</div>
+				<br>
+					
+					<select id="bodyarmorInput" class="talentInput" placeholder="Talent...">
+					</select>
+					
+					<select id="backpackInput"  class="talentInput" placeholder="Talent...">
+					</select>
+					
+				<br>
+					<select id="maskInput"   	class="talentInput" placeholder="Talent...">
+					</select>
+					
+					<select id="glovesInput"    class="talentInput" placeholder="Talent...">
+					</select>
+					
+				<br>
+					<select id="kneepadsInput"  class="talentInput" placeholder="Talent...">
+					</select>
+					
+					<select id="holsterInput"   class="talentInput" placeholder="Talent...">
+					</select>
+				<br>
+					
+				<button type="button" id="submitChest">Create Gearset</button>
+				
+				
+				</fieldset>
+			</form>
+				<br>
+			Saved Gearsets
+				<br>
+			<select id="savedGear">
+				
+			</select>
+			<button type="button" id="loadChest">Load Gearset</button>
+			<button type="button" id="deleteChest">Delete Gearset</button>
+			
+			
+			
+			
+			<table border="1">
+				<tr>
+					<th id="gearsetName" colspan="2" align="center" class="title">NameOfGearSet
+					</th>
+				</tr>
+				<tr class="title">
+					<th>Attribute</th>
+					<th>Value</th>
+				</tr>
+				<tr class="majorOff">
+					<th colspan="2" align="center">Major (offensive)</th>
+				</tr>
+				<tr class="majorOff">
+					<td>Crit Chance</td>
+					<td id="Crit Chance">-</td>
+				</tr>
+				<tr class="majorOff">
+					<td>Crit Damage</td>
+					<td id="Crit Damage">-</td>
+				</tr>
+				<tr class="majorOff">
+					<td id="Weapon Name">Weapon Damage</td>
+					<td id="Weapon Damage">-</td>
+				</tr>
+				<tr class="majorOff">
+					<td>Damage vs Elites</td>
+					<td id="Damage vs Elites">-</td>
+				</tr>
+				
+				<tr class="majorDef">
+					<th class="Title" colspan="2" align="center">Major (defensive)</th>
+				</tr>
+				<tr class="majorDef">
+					<td>Armor(additional)</td>
+					<td id="Armor (additional)">-</td>
+				</tr>
+				<tr class="majorDef">
+					<td>Bonus Health</td>
+					<td id="Health">-</td>
+				</tr>
+				<tr class="majorDef">
+					<td>HP On Kill</td>
+					<td id="HP on Kill">-</td>
+				</tr>
+				<tr class="majorDef">
+					<td>Exotic Damage Resilience</td>
+					<td id="Exotic Damage Resilience">-</td>
+				</tr>
+				<tr class="majorDef">
+					<td>Protection vs Elites</td>
+					<td id="Protection vs Elites">-</td>
+				</tr>
+				
+				<tr class="majorUtil">
+					<th colspan="2" align="center">Major (utility)</th>
+				</tr>
+				<tr class="majorUtil">
+					<td>Skill Power</td>
+					<td id="Skill Power">-</td>
+				</tr>
+				<tr class="majorUtil">
+					<td>Skill Haste</td>
+					<td id="Skill Haste">-</td>
+				</tr>
+				<tr class="majorUtil">
+					<td>Signature Resource Gain</td>
+					<td id="Signature Resource Gain">-</td>
+				</tr>
+				
+				<tr class="minor">
+					<th colspan="2" align="center">Minor</th>
+				</tr>
+				<tr class="minor">
+					<td>Enemy Armor Damage</td>
+					<td id="Enemy Armor Damage">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Ammo Capacity</td>
+					<td id="Ammo Capacity">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Kill XP</td>
+					<td id="Kill XP">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Shock Resistance</td>
+					<td id="Shock Resistance">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Burn Resistance</td>
+					<td id="Burn Resistance">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Disorient Resistance</td>
+					<td id="Disorient Resistance">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Blind/Deaf Resistance</td>
+					<td id="Blind/Deaf Resistance">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Disrupt Resistance</td>
+					<td id="Disrupt Resistance">-</td>
+				</tr>
+				<tr class="minor">
+					<td>Bleed Resistance</td>
+					<td id="Bleed Resistance">-</td>
+					
+				</tr>
+				
+				
+				
+			</table>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="DivisionGearCalc.js" type="text/javascript"></script>
+	</body>
+</html>
