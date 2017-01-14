@@ -203,6 +203,14 @@ function loadSelected(){
 	document.getElementById("gearsetName").innerHTML = savedGear.value;
 		var selectedItem = localStorage.getItem(savedGear.value);
 		var selectedItem = JSON.parse(selectedItem);
+	
+	
+		document.getElementById("bodyTalent").innerHTML = JSON.parse(localStorage.getItem(selectedItem.bodyarmor)).talent;
+		document.getElementById("backTalent").innerHTML = JSON.parse(localStorage.getItem(selectedItem.backpack)).talent;
+		document.getElementById("maskTalent").innerHTML = JSON.parse(localStorage.getItem(selectedItem.mask)).talent;
+		document.getElementById("kneesTalent").innerHTML = JSON.parse(localStorage.getItem(selectedItem.kneepads)).talent;
+		document.getElementById("holsterTalent").innerHTML = JSON.parse(localStorage.getItem(selectedItem.holster)).talent;
+		document.getElementById("glovesTalent").innerHTML = JSON.parse(localStorage.getItem(selectedItem.gloves)).talent;
 		
 			processItem(localStorage.getItem(selectedItem.bodyarmor));
 			processItem(localStorage.getItem(selectedItem.backpack));
@@ -382,6 +390,13 @@ function resetValues(){
 	document.getElementById("Blind/Deaf Resistance").innerHTML = "-";
 	document.getElementById("Disrupt Resistance").innerHTML = "-";
 	document.getElementById("Bleed Resistance").innerHTML = "-";
+	
+		document.getElementById("bodyTalent").innerHTML = "-";
+		document.getElementById("backTalent").innerHTML = "-";
+		document.getElementById("maskTalent").innerHTML = "-";
+		document.getElementById("kneesTalent").innerHTML = "-";
+		document.getElementById("holsterTalent").innerHTML = "-";
+		document.getElementById("glovesTalent").innerHTML = "-";
 }
 
 /*
